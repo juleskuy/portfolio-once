@@ -1,3 +1,6 @@
 [build]
-  command = "npm ci && npm run build"
+  command = "npm install -g npm@latest && npm ci && npm run build"
   publish = "out"
+
+[build.environment]
+  NPM_FLAGS = "--version"
